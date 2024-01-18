@@ -7,7 +7,7 @@ module.exports = {
     schema: []
   },
   create(context) {
-    const REPORT_MESSAGE = `'error' key is not used from 'useAsync', resulting in exceptions in useAsync from being ignored.`;
+    const REPORT_MESSAGE = `'error' key is not used from 'useAsync', resulting in swallowed exceptions in 'useAsync' callback.`;
     const useAsyncNodes = [];
     return {
       VariableDeclarator(node) {
